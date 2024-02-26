@@ -11,20 +11,14 @@ public class Main {
 
         if (cantidad == 1) {
             sueldo = 15860 + (15860 * 0.10);
+        } else if (cantidad == 2) {
+            sueldo = 25750.82;
+        } else if (cantidad == 3) {
+            sueldo = 32630.80 - (32630.80 * 0.15);
         } else {
-            if (cantidad == 2) {
-                sueldo = 25750.82;
-            } else {
-                if (cantidad == 3) {
-                    sueldo = 32630.80 - (32630.80 * 0.15);
-                } else {
-                    System.out.println("Ingrese un numero valido entre 1-3: ");
-                }
-            }
+            System.out.println("Ingrese un numero valido entre 1-3: ");
         }
 
-        if (cantidad == 1 || cantidad == 2 || cantidad == 3) {
-            System.out.println("El sueldo correspondiente a  la categorioa: " + cantidad + " es de: " + sueldo + "pesos");
-        }
+        System.out.println("El sueldo correspondiente a  la categorioa: " + cantidad + " es de: $" + sueldo + " pesos");
     }
 }
